@@ -10,5 +10,5 @@ html5 class
 - wk03 upload
   - 폴더2개, 파일14개올림
   - Iframe을 배움
-  - Iframe과 지난수업을 응용 를 만듬
+  - Iframe과 지난수업을 응용하여 사이트를 만듬
   
