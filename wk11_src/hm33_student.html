@@ -7,31 +7,44 @@
     <title>hm33 : Javascript object</title>
     <style></style>
     <script>
-      //리터럴 표기법으로 사용자 객체 만들기
+      //리터럴 표기법으로 student객체 만들기
       var student = {
         // 프로퍼티 생성 및 초기화
         name: "이재면",
         id: "hm33",
-        phone: "010-1234-6789",
-        food: "치킨",
-        birth: "10월 18일",
-        born: "부산"
+        born: "부산",
+        age: "26",
+        phone: "010 - 7597 - 5543",
+        weight: 85,
+
+                
+        kgadd: function() {
+          return student.weight + 10;
+        },
+        kgsub: function(){
+          return student.weight - 10;
+        }
+        
       };
     </script>
   </head>
 
   <body>
     <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
-    <h3>리터럴 표기 방식으로 사용자 객체 만들기</h3>
+    <h3>리터럴 표기법으로 student 객체 만들기</h3>
     <hr />
+
     <script>
-      document.write("student : ");
-      document.write(student.name + "<br>");
-      document.write("HTML id : " + student.id + "<br>");
-      document.write("전화번호 : " + student.phone + "<br>");
-      document.write("좋아하는 음식 : " + student.food + "<br>");
-      document.write("생일 : " + student.birth + "<br>");
-      document.write("고향 : " + student.born + "<br>");
+      document.write("student   " +"<br>");
+      document.write(" 이름: " + student.name + "<br>");
+      document.write(" 아이디: " + student.id + "<br>");
+      document.write(" 출생지: " +student.born + "<br>");
+      document.write(" 나이: " +student.age + "<br>");
+      document.write(" 번호: " +student.phone + "<br>");
+      document.write(" 몸무게: " +student.weight + "<br><hr>");
+      
+      document.write("10kg 찐 몸무게는" + student.kgadd() + "kg 입니다.<br>");
+      document.write("10kg 뺀 몸무게는" + student.kgsub() + "kg 입니다.<br>");
     </script>
   </body>
 </html>
