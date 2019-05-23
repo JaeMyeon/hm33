@@ -44,6 +44,7 @@ html5 class
   - 리터럴을 이용하여 객체를 만들고 자기정보를 만듬.
   - new Object()를 이용하여 box객체를 만듬
 - wk12 upload
+  - 파일 28개를 올림.
   - DOM과 BOM를 이해한다.
   - DOM 트리와 DOM 객체를 이해한다.
   - DOM 객체를 통해 HTML 태그의 출력 모양과 콘텐츠를 제어 할 수 있다.
