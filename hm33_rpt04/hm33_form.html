@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm33 : 헬스동호회 모집</title>
+    <style>
+      h3 {
+        color: red;
+        text-shadow: 0px 0px 5px yellow;
+        font-size: 4em;
+      }
+      p {
+        font: italic bold 40px consolas, sans-serif;
+        color: blue;
+        font-size: 2em;
+      }
+      span {
+        color: green;
+        font-size: 3em;
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>헬스 동호회 모집!</h3>
+    <hr />
+    <p>*가입신청서를 작성해주세요.</p>
+    <form>
+      <fieldset>
+        <legend>회원정보</legend>
+        이름 : <input type="email" /><br />
+        나이 : <input type="number" /><br />
+        키 : <input type="number" /><br />
+        몸무게 : <input type="number" /><br />
+        전화번호 : <input type="tel" />
+      </fieldset>
+      <ul>
+        <li>살을 빼고 싶으신분</li>
+        <li>의지가 부족하신분</li>
+        <li>운동에 관한 지식이 부족하신분</li>
+        <li>운동이 지루하신분</li>
+      </ul>
+    </form>
+    <div>
+      <span id="div" style="background-color:yellow">
+        저희 헬스 동호회로 오십시오! 즐겁게 함께운동합시다.</span
+      >
+    </div>
+    <script>
+      var div = document.getElementById("div");
+      var timerID = setInterval("doRotate()", 200);
+      // 200밀리초 주기로 doRotate() 호출
+
+      div.onclick = function(e) {
+        // 마우스 클릭 이벤트 리스너
+        clearInterval(timerID);
+
+        // 타이머 해제. 문자열 회전 중단
+      };
+      function doRotate() {
+        var str = div.innerHTML;
+        var firstChar = str.substr(0, 1);
+        var remains = str.substr(1, str.length - 1);
+        str = remains + firstChar;
+        div.innerHTML = str;
+      }
+    </script>
+    <small>문의사항 : Tel. 010-111-1111</small>
+  </body>
+</html>

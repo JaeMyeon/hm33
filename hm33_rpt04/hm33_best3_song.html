@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm33 : Javascript BOM</title>
+    <style>
+      h3 {
+        font-size: 3em;
+        text-shadow: 3px 3px 5px skyBlue;
+      }
+      a,
+      select {
+        font-size: 2em;
+      }
+    </style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>HM33의 best3 노래</h3>
+    <hr />
+    <a>노래 선택 :</a>
+    <select id="site">
+      <option>노래를 선택하세요. </option>
+      <option value="https://www.youtube.com/watch?v=oj9XMiEL8qA"
+        >정은지 '상자'
+      </option>
+      <option value="https://www.youtube.com/watch?v=nzDO6tAB6ng"
+        >정은지 '하늘바라기'
+      </option>
+      <option value="https://www.youtube.com/watch?v=6GC8JF2FOgA"
+        >펀치 'Say Yes'
+      </option>
+    </select>
+
+    <p>
+      <button onclick="load()">웹 사이트 접속</button>
+    </p>
+  </body>
+</html>
